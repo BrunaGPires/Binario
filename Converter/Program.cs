@@ -1,6 +1,8 @@
 ﻿Console.Write("Digite um número: ");
 int numero = int.Parse(Console.ReadLine());
 
+int numeroOriginal = numero;
+
 List<int> resultado = new List<int>();
 while (numero > 0 )
 {
@@ -14,7 +16,7 @@ while (resultado.Count < 8)
     resultado.Insert(0, 0);
 }
 
-Console.WriteLine($"O número {numero} em binário é:");
+Console.WriteLine($"O número {numeroOriginal} em binário é:");
 foreach (int valor in resultado)
 {
     Console.Write(valor);
